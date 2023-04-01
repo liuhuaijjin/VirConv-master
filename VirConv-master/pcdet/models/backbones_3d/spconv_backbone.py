@@ -19,7 +19,7 @@ def index2points(indices, pts_range=[0, -40, -3, 70.4, 40, 1], voxel_size=[0.05,
     indices_float = indices.clone().float()
     new_indices[:, 1] = indices_float[:, 3] * voxel_size[0] + min_x
     new_indices[:, 2] = indices_float[:, 2] * voxel_size[1] + min_y
-    new_indices[:, 3] = indices_float[:, 1] * voxel_size[2] + min_z
+   
 
     return new_indices
 
